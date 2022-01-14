@@ -3,7 +3,7 @@ import numpy as np
 import os
 
 def detect_object(frame):
-    cfg_path = os.path.abspath('yolo/yolov4_custom.cfg')
+    cfg_path = os.path.abspath('yolo/yolov4-custom.cfg')
     weights_path = os.path.abspath('yolov4.weights')
     names_path = os.path.abspath('yolo/obj.names')
 
