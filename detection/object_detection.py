@@ -9,7 +9,7 @@ def detect_object(frame):
 
     # Load Yolo
     # net = cv2.dnn_DetectionModel('yolov4.cfg', 'yolov4.weights')
-    net = cv2.dnn_DetectionModel(cfg_path, weights_path)
+    net = cv2.dnn_DetectionModel(weights_path,cfg_path)
     net.setInputSize(256, 256)
     net.setInputScale(1.0 / 255)
     net.setInputSwapRB(True)
