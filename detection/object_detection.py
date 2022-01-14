@@ -3,9 +3,9 @@ import numpy as np
 import os
 
 def detect_object(frame):
-    cfg_path = os.path.abspath('yolo/yolov4.cfg')
+    cfg_path = os.path.abspath('yolo/yolov4_custom.cfg')
     weights_path = os.path.abspath('yolov4.weights')
-    names_path = os.path.abspath('yolo/coco.names')
+    names_path = os.path.abspath('yolo/obj.names')
 
     # Load Yolo
     # net = cv2.dnn_DetectionModel('yolov4.cfg', 'yolov4.weights')
