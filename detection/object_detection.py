@@ -10,14 +10,14 @@ def detect_object(frame):
     # Load Yolo
     # net = cv2.dnn_DetectionModel('yolov4.cfg', 'yolov4.weights')
     net = cv2.dnn_DetectionModel(cfg_path, weights_path)
-    net.setInputSize(704, 704)
+    net.setInputSize(256, 256)
     net.setInputScale(1.0 / 255)
     net.setInputSwapRB(True)
 
     # frame = cv2.imread('sample1.jpg')
     # print(type(frame))
     # Resize the image
-    frame = cv2.resize(frame, dsize=(704, 704), interpolation=cv2.INTER_AREA)
+    frame = cv2.resize(frame, dsize=(256, 256), interpolation=cv2.INTER_AREA)
 
     # with open('coco.names', 'rt') as f:
     with open(names_path, 'rt') as f:
