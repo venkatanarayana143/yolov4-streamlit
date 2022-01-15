@@ -15,7 +15,7 @@ def read_img(img):
 def yolo_v3(image, confidence_threshold=0.5, overlap_threshold=0.3):
 
 	# Load model architecture
-    net = cv2.dnn.readNetFromDarknet("yolov3.cfg", "yolov3.weights")
+    net = cv2.dnn.readNetFromDarknet("yolov4.cfg", "yolov4.weights")
     output_layer_names = net.getLayerNames()
     output_layer_names = [output_layer_names[i[0] - 1] for i in net.getUnconnectedOutLayers()]
 
